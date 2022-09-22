@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
-rsync -a --delete harden-applet@tony2464 $HOME/.local/share/cinnamon/applets
+applet="harden-applet@Tony2464"
+rsync -a --delete $applet $HOME/.local/share/cinnamon/applets
 pkill -HUP -f "cinnamon --replace"
